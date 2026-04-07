@@ -1674,14 +1674,17 @@ a { text-decoration: none; }
   .feature-item i { font-size: 1.4rem; }
 
   /* Filter pills scroll horizontally instead of wrapping */
-  .filter-sort-row  { flex-direction: column; align-items: stretch; gap: 10px; }
+  .filter-sort-row  { flex-direction: column; align-items: stretch; gap: 10px; width: 100%; max-width: 100%; overflow: hidden; }
   .filter-pills     {
     flex-wrap: nowrap;
     overflow-x: auto;
+    overflow-y: visible;
     -webkit-overflow-scrolling: touch;
     padding-bottom: 4px;
     scrollbar-width: thin;
     scrollbar-color: var(--gold) transparent;
+    width: 100%;
+    max-width: 100%;
   }
   .filter-pills::-webkit-scrollbar        { height: 3px; }
   .filter-pills::-webkit-scrollbar-thumb  { background: var(--gold); border-radius: 2px; }
