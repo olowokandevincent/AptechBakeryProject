@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bakerz Bite - Premium artisan bakery offering fresh baked goods daily. Where smiles are served daily." />
+  <title>Bakerz Bite | Where Smiles Are Served Daily</title>
+   <link rel="shortcut icon" href="./assets/images//favicon.png" type="image/x-icon">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" />
+  <!-- AOS Animate on Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ========================================================
+     PRELOADER
+     ======================================================== -->
+<div id="preloader">
+  <div class="preloader-inner">
+    <span class="preloader-logo"><img src="assets/images/logo.png" alt="Bakerz Bite" /></span>
+    <p class="preloader-text">Bakerz Bite</p>
+    <div class="preloader-bar"><div class="preloader-fill"></div></div>
+  </div>
+</div>
+
+<!-- ========================================================
+     NAVBAR
+     ======================================================== -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="#home">
+      <span class="brand-icon"><img class="logo" src="./assets/images/logo.png" alt="Bakerz Bite"></span>
+      <span class="brand-name">Bakerz<span class="brand-accent">Bite</span></span>
+    </a>
+
+    <button class="nav-hamburger" id="navHamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="#merchandise">Merchandise</a></li>
+        <li class="nav-item"><a class="nav-link" href="#offers">Offers</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <!-- Search bar -->
+      <div class="nav-search-wrapper ms-3">
+        <input type="text" id="navSearch" class="nav-search-input" placeholder="Search products..." autocomplete="off" />
+        <button class="nav-search-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+      </div>
+      <span id="visitorCount" style="display:none">0</span>
+    </div>
+  </div>
+</nav>
+
+<!-- ========================================================
+     HERO SECTION
+     ======================================================== -->
+<section id="home" class="hero-section">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="hero-slide slide-1">
+          <div class="hero-overlay">
+            <div class="container">
+              <div class="hero-content">
+                <p class="hero-tagline">Welcome to</p>
+                <h1 class="hero-title">Bakerz Bite</h1>
+                <p class="hero-subtitle">Where Smiles Are Served Daily</p>
+                <p class="hero-desc">Artisan baked goods crafted with love, using only the finest real ingredients.</p>
+                <div class="hero-btns">
+                  <a href="#products" class="btn btn-primary-custom">Explore Our Menu</a>
+                  <a href="#about" class="btn btn-outline-custom">Our Story</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="hero-slide slide-2">
+          <div class="hero-overlay">
+            <div class="container">
+              <div class="hero-content">
+                <p class="hero-tagline">Freshly Baked</p>
+                <h1 class="hero-title">Every Single Day</h1>
+                <p class="hero-subtitle">300+ Artisan Creations</p>
+                <p class="hero-desc">From gourmet cakes to flaky pastries — made fresh every morning with premium ingredients.</p>
+                <div class="hero-btns">
+                  <a href="#products" class="btn btn-primary-custom">Shop Now</a>
+                  <a href="#gallery" class="btn btn-outline-custom">View Gallery</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="hero-slide slide-3">
+          <div class="hero-overlay">
+            <div class="container">
+              <div class="hero-content">
+                <p class="hero-tagline">Premium Quality</p>
+                <h1 class="hero-title">Pure Ingredients</h1>
+                <p class="hero-subtitle">Real Butter · Real Cream · Unbleached Flour</p>
+                <p class="hero-desc">We treat our customers as family — only the very best makes it to your table.</p>
+                <div class="hero-btns">
+                  <a href="#offers" class="btn btn-primary-custom">Today's Offers</a>
+                  <a href="#contact" class="btn btn-outline-custom">Find Us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================================================
+     FEATURES BAR
+     ======================================================== -->
+<section class="features-bar">
+  <div class="container-fluid px-0">
+    <div class="row g-0">
+      <div class="col-6 col-md-3 feature-item">
+        <i class="fas fa-bread-slice"></i>
+        <div><strong>300+</strong><span>Baked Goods</span></div>
+      </div>
+      <div class="col-6 col-md-3 feature-item">
+        <i class="fas fa-leaf"></i>
+        <div><strong>100%</strong><span>Natural Ingredients</span></div>
+      </div>
+      <div class="col-6 col-md-3 feature-item">
+        <i class="fas fa-clock"></i>
+        <div><strong>Fresh</strong><span>Baked Daily</span></div>
+      </div>
+      <div class="col-6 col-md-3 feature-item">
+        <i class="fas fa-heart"></i>
+        <div><strong>Made</strong><span>With Love</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     PRODUCTS SECTION
+     ======================================================== -->
+<section id="products" class="section-padding">
+  <div class="container">
+    <div class="section-header text-center" data-aos="fade-up">
+      <p class="section-label">Our Specialties</p>
+      <h2 class="section-title">Fresh From The Oven</h2>
+      <p class="section-desc">Discover our wide range of handcrafted baked goods, made fresh every day with premium ingredients.</p>
+    </div>
+
+    <!-- Filter + Sort Row -->
+    <div class="filter-sort-row" data-aos="fade-up">
+      <div class="filter-pills">
+        <button class="filter-btn active" data-filter="all"><i class="fas fa-th me-1"></i> All Items</button>
+        <button class="filter-btn" data-filter="cakes"><i class="fas fa-birthday-cake me-1"></i> Cakes</button>
+        <button class="filter-btn" data-filter="pastries"><i class="fas fa-bread-slice me-1"></i> Pastries</button>
+        <button class="filter-btn" data-filter="cookies"><i class="fas fa-cookie me-1"></i> Cookies</button>
+        <button class="filter-btn" data-filter="pies"><i class="fas fa-pie-chart me-1"></i> Pies</button>
+        <button class="filter-btn" data-filter="bestseller"><i class="fas fa-star me-1"></i> Bestsellers</button>
+        <button class="filter-btn" data-filter="new"><i class="fas fa-certificate me-1"></i> New</button>
+        <button class="filter-btn" data-filter="premium"><i class="fas fa-crown me-1"></i> Premium</button>
+      </div>
+      <select id="sortSelect" class="sort-select" aria-label="Sort products">
+        <option value="">Sort By</option>
+        <option value="name-asc">Name: A &rarr; Z</option>
+        <option value="name-desc">Name: Z &rarr; A</option>
+        <option value="price-asc">Price: Low &rarr; High</option>
+        <option value="price-desc">Price: High &rarr; Low</option>
+      </select>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="row g-4" id="productsGrid"></div>
+  </div>
+</section>
+
+<!-- ========================================================
+     MERCHANDISE SECTION
+     ======================================================== -->
+<section id="merchandise" class="section-padding bg-cream">
+  <div class="container">
+    <div class="section-header text-center" data-aos="fade-up">
+      <p class="section-label">Take Us Home</p>
+      <h2 class="section-title">Bakerz Bite Merchandise</h2>
+      <p class="section-desc">Carry the Bakerz Bite spirit with our exclusive branded merchandise collection.</p>
+    </div>
+    <div class="row g-4" id="merchandiseGrid"></div>
+  </div>
+</section>
+
+<!-- ========================================================
+     SPECIAL OFFERS SECTION
+     ======================================================== -->
+<section id="offers" class="section-padding offers-section">
+  <div class="container">
+    <div class="section-header text-center" data-aos="fade-up">
+      <p class="section-label">Limited Time</p>
+      <h2 class="section-title">Today's Special Offers</h2>
+      <p class="section-desc">Don't miss out on our daily deals and seasonal specials!</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="offer-card">
+          <div class="offer-badge">20% OFF</div>
+          <div class="offer-icon"><i class="fas fa-birthday-cake"></i></div>
+          <h4>Cake of the Day</h4>
+          <p>Get 20% off on our featured cake every day. Today's special: Red Velvet Cake — a timeless classic!</p>
+          <div class="offer-price"><span>₦8,000</span> ₦6,400</div>
+          <a href="#products" class="btn btn-offer">Grab This Deal</a>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="offer-card featured-offer">
+          <div class="offer-badge hot"><i class="fas fa-fire me-1"></i> HOT DEAL</div>
+          <div class="offer-icon"><i class="fas fa-mug-hot"></i></div>
+          <h4>Coffee + Pastry Combo</h4>
+          <p>Any artisan coffee paired with your choice of pastry at a special bundled price. Pure bliss!</p>
+          <div class="offer-price"><span>₦4,500</span> ₦3,200</div>
+          <a href="#products" class="btn btn-offer">Grab This Deal</a>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="offer-card">
+          <div class="offer-badge">BUY 2 GET 1</div>
+          <div class="offer-icon"><i class="fas fa-cookie-bite"></i></div>
+          <h4>Cookie Bundle</h4>
+          <p>Buy any 2 dozens of cookies and get the 3rd dozen absolutely free. Stock up on goodness!</p>
+          <div class="offer-price"><span>₦6,000</span> ₦4,000</div>
+          <a href="#products" class="btn btn-offer">Grab This Deal</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Loyalty Banner -->
+    <div class="loyalty-banner" data-aos="fade-up">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <h4><i class="fas fa-crown me-2"></i>Join Our Loyalty Program</h4>
+          <p>Earn points on every purchase. Redeem for free treats and exclusive member discounts!</p>
+        </div>
+        <div class="col-md-4 text-md-end mt-3 mt-md-0">
+          <a href="#contact" class="btn btn-primary-custom">Sign Up Free</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     GALLERY SECTION
+     ======================================================== -->
+<section id="gallery" class="section-padding">
+  <div class="container">
+    <div class="section-header text-center" data-aos="fade-up">
+      <p class="section-label">Visual Feast</p>
+      <h2 class="section-title">Our Gallery</h2>
+      <p class="section-desc">A beautiful glimpse into the world of Bakerz Bite — click any image to explore.</p>
+    </div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </div>
+</section>
+
+<!-- ========================================================
+     ABOUT US SECTION
+     ======================================================== -->
+<section id="about" class="section-padding bg-cream">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <div class="about-image-wrapper">
+          <div class="about-main-img">
+            <img src="assets/images/Chief_image.png" alt="Our Head Baker" class="about-real-img" />
+          </div>
+          <div class="about-badge-1">
+            <strong>EST.</strong>
+            <strong class="about-year">2026</strong>
+          </div>
+          <div class="about-badge-2">
+            <i class="fas fa-star"></i>
+            <strong>4.9/5</strong>
+            <small>Rating</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <p class="section-label">Our Story</p>
+        <h2 class="section-title">Passion Baked Into<br/>Every Bite</h2>
+        <p class="about-text">Since our launch, <strong>Bakerz Bite</strong> has developed into a reputable bakery &amp; café, specializing in baked goods passionately made from the finest ingredients. We offer more than <strong>300 different kinds</strong> of baked goods, including artisan pastries, gourmet cakes, and handcrafted beverages.</p>
+        <p class="about-text">We believe and are dedicated to delivering premium quality products. So we only use <strong>real butter, cream, and unbleached flour</strong>. We treat our customers as our family and will not use any ingredient which we will not want to feed our own.</p>
+        <div class="about-values">
+          <div class="value-item"><i class="fas fa-check-circle"></i><span>100% Natural Ingredients</span></div>
+          <div class="value-item"><i class="fas fa-check-circle"></i><span>Baked Fresh Every Morning</span></div>
+          <div class="value-item"><i class="fas fa-check-circle"></i><span>No Artificial Preservatives</span></div>
+          <div class="value-item"><i class="fas fa-check-circle"></i><span>Sustainably Sourced</span></div>
+        </div>
+        <blockquote class="about-motto">"Where smiles are served daily."</blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     TESTIMONIALS
+     ======================================================== -->
+<section class="section-padding testimonials-section">
+  <div class="container">
+    <div class="section-header text-center" data-aos="fade-up">
+      <p class="section-label">Happy Customers</p>
+      <h2 class="section-title">What People Say</h2>
+      <p class="section-desc">Thousands of satisfied customers - here's what some of them have to say.</p>
+    </div>
+    <div class="row g-4" id="testimonialsContainer"></div>
+  </div>
+</section>
+
+<!-- ========================================================
+     FEEDBACK & RATING SECTION
+     ======================================================== -->
+<section id="feedback" class="section-padding bg-cream">
+  <div class="container">
+    <div class="row g-5 align-items-start">
+      <!-- Form -->
+      <div class="col-lg-6" data-aos="fade-right">
+        <p class="section-label">Your Voice Matters</p>
+        <h2 class="section-title">Leave a Review</h2>
+        <p class="section-desc mb-4" style="max-width:100%">We'd love to hear about your Bakerz Bite experience!</p>
+
+        <div class="rating-widget">
+          <p class="rating-label">How would you rate us?</p>
+          <div class="star-rating" id="starRating">
+            <i class="fas fa-star" data-rating="1"></i>
+            <i class="fas fa-star" data-rating="2"></i>
+            <i class="fas fa-star" data-rating="3"></i>
+            <i class="fas fa-star" data-rating="4"></i>
+            <i class="fas fa-star" data-rating="5"></i>
+          </div>
+          <p class="rating-text" id="ratingText">Click a star to rate</p>
+        </div>
+
+        <form id="feedbackForm" class="feedback-form">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <input type="text" class="form-control custom-input" placeholder="Your Name *" id="fbName" required />
+            </div>
+            <div class="col-sm-6">
+              <input type="email" class="form-control custom-input" placeholder="Email Address *" id="fbEmail" required />
+            </div>
+            <div class="col-12">
+              <select class="form-control custom-input" id="fbProduct">
+                <option value="">What did you try?</option>
+                <option>Cakes</option>
+                <option>Pastries</option>
+                <option>Cookies</option>
+                <option>Pies</option>
+                <option>Beverages</option>
+                <option>Merchandise</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <textarea class="form-control custom-input" rows="4" placeholder="Share your experience..." id="fbMessage" required></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary-custom w-100">
+                <i class="fas fa-paper-plane me-2"></i>Submit Review
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Rating Summary -->
+      <div class="col-lg-6" data-aos="fade-left">
+        <div class="rating-summary">
+          <h3>Overall Rating</h3>
+          <div class="overall-score">4.9</div>
+          <div class="overall-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+          </div>
+          <p class="rating-total">Based on 1,247 verified reviews</p>
+          <div class="rating-bars">
+            <div class="rating-bar-item">
+              <span>5 ★</span>
+              <div class="bar"><div class="fill" style="width:85%"></div></div>
+              <span>85%</span>
+            </div>
+            <div class="rating-bar-item">
+              <span>4 ★</span>
+              <div class="bar"><div class="fill" style="width:10%"></div></div>
+              <span>10%</span>
+            </div>
+            <div class="rating-bar-item">
+              <span>3 ★</span>
+              <div class="bar"><div class="fill" style="width:3%"></div></div>
+              <span>3%</span>
+            </div>
+            <div class="rating-bar-item">
+              <span>2 ★</span>
+              <div class="bar"><div class="fill" style="width:1%"></div></div>
+              <span>1%</span>
+            </div>
+            <div class="rating-bar-item">
+              <span>1 ★</span>
+              <div class="bar"><div class="fill" style="width:1%"></div></div>
+              <span>1%</span>
+            </div>
+          </div>
+          <div class="rating-highlights">
+            <div class="highlight-item"><i class="fas fa-thumbs-up"></i><span>97% recommend us</span></div>
+            <div class="highlight-item"><i class="fas fa-redo"></i><span>94% are repeat visitors</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     FAQ SECTION
+     ======================================================== -->
+<section id="faq" class="section-padding">
+  <div class="container">
+    <div class="section-header text-center" data-aos="fade-up">
+      <p class="section-label">Got Questions?</p>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-desc">Everything you need to know about Bakerz Bite.</p>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8" data-aos="fade-up">
+        <div class="accordion" id="faqAccordion">
+
+          <div class="accordion-item faq-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                <i class="fas fa-clock me-2"></i> What are your store hours?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body faq-body">
+                We are open <strong>Monday to Saturday</strong> from 7:00 AM to 9:00 PM, and <strong>Sundays</strong> from 8:00 AM to 6:00 PM. We bake fresh every morning — the earlier you come, the more variety you'll find!
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item faq-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                <i class="fas fa-birthday-cake me-2"></i> Do you offer custom cake orders?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body faq-body">
+                Absolutely! We specialize in custom cakes for <strong>birthdays, weddings, anniversaries, and corporate events</strong>. Please contact us at least 72 hours in advance to place your custom order. Design consultations are available in-store.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item faq-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                <i class="fas fa-leaf me-2"></i> Do you cater for dietary restrictions?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body faq-body">
+                Yes! We offer <strong>gluten-free, sugar-free, and vegan options</strong> across many of our product lines. Please inform our staff of your dietary needs and they will guide you to the right products.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item faq-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                <i class="fas fa-truck me-2"></i> Do you offer delivery services?
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body faq-body">
+                Yes, we deliver within a <strong>15km radius</strong> of our store. Orders above ₦10,000 qualify for <strong>free delivery</strong>. Contact us to arrange delivery for your order. Delivery is available Monday–Saturday.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item faq-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                <i class="fas fa-seedling me-2"></i> What ingredients do you use?
+              </button>
+            </h2>
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body faq-body">
+                We use only <strong>real butter, fresh cream, and unbleached flour</strong>. We do not use artificial preservatives or additives. Our ingredients are carefully selected and sourced from trusted suppliers to ensure the highest quality in every bite.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item faq-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                <i class="fas fa-crown me-2"></i> How do I join the loyalty program?
+              </button>
+            </h2>
+            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body faq-body">
+                Simply fill out the <a href="#contact">contact form</a> on our website or visit us in-store to sign up for free. You'll immediately start earning points on every purchase, redeemable for <strong>free treats and exclusive discounts</strong>!
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     CONTACT SECTION
+     ======================================================== -->
+<section id="contact" class="section-padding contact-section">
+  <div class="container">
+    <div class="section-header text-center" data-aos="fade-up">
+      <p class="section-label">Get In Touch</p>
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-desc">We'd love to hear from you. Visit us or drop us a message!</p>
+    </div>
+    <div class="row g-5">
+      <!-- Contact Info -->
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="contact-info-list">
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h5>Visit Us</h5>
+              <p>12 Baker's Avenue, Victoria Island<br/>Lagos, Nigeria</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h5>Call Us</h5>
+              <p>+234 801 234 5678<br/>+234 901 234 5678</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h5>Email Us</h5>
+              <p>hello@bakerzbite.com<br/>orders@bakerzbite.com</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h5>Opening Hours</h5>
+              <p>Mon–Sat: 7:00 AM – 9:00 PM<br/>Sunday: 8:00 AM – 6:00 PM</p>
+            </div>
+          </div>
+        </div>
+        <div class="social-links mt-4">
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-lg-7" data-aos="fade-left">
+        <form id="contactForm" class="contact-form">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <input type="text" id="ctName" class="form-control custom-input" placeholder="Your Name *" required />
+            </div>
+            <div class="col-sm-6">
+              <input type="email" id="ctEmail" class="form-control custom-input" placeholder="Email Address *" required />
+            </div>
+            <div class="col-sm-6">
+              <input type="tel" id="ctPhone" class="form-control custom-input" placeholder="Phone Number" />
+            </div>
+            <div class="col-sm-6">
+              <select id="ctSubject" class="form-control custom-input">
+                <option value="">Select Subject</option>
+                <option>General Enquiry</option>
+                <option>Custom Cake Order</option>
+                <option>Delivery</option>
+                <option>Feedback</option>
+                <option>Partnership</option>
+                <option>Loyalty Program</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <textarea id="ctMessage" class="form-control custom-input" rows="5" placeholder="Your Message *" required></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary-custom w-100">
+                <i class="fas fa-paper-plane me-2"></i>Send Message
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Map + Geolocation Row -->
+    <div class="row mt-5 g-4 align-items-stretch">
+      <div class="col-lg-7" data-aos="fade-up">
+        <div class="contact-map-wrap">
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=3.3819%2C6.3981%2C3.4619%2C6.4581&amp;layer=mapnik&amp;marker=6.4281%2C3.4219"
+            title="Bakerz Bite Store Location — Victoria Island, Lagos"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <div class="col-lg-5" data-aos="fade-up" data-aos-delay="120">
+        <div class="geo-card">
+          <div class="geo-icon"><i class="fas fa-location-arrow"></i></div>
+          <h4>Find Us Near You</h4>
+          <p>Allow location access to pinpoint your position and get turn-by-turn directions straight to Bakerz Bite.</p>
+          <button class="btn btn-primary-custom w-100 mb-3" id="geoBtn" onclick="getContactGeolocation()">
+            <i class="fas fa-map-marker-alt me-2"></i>Use My Location
+          </button>
+          <div id="geoResult" class="geo-result"></div>
+          <div class="geo-store-link mt-3">
+            <a href="https://www.google.com/maps/search/Victoria+Island+Lagos" target="_blank" rel="noopener">
+              <i class="fas fa-map me-1"></i>View Store on Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     FOOTER
+     ======================================================== -->
+<footer class="main-footer" id="sitemap">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Brand -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">
+            <span><img src="./assets/images/logo.png" class="logo" alt="Bakerz Bite"></span>
+            <span class="brand-name">Bakerz<span class="brand-accent">Bite</span></span>
+          </div>
+          <p class="footer-desc">Where smiles are served daily. Premium artisan bakery crafting happiness with every bite since 2018. Real ingredients. Real love. Real flavour.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <!-- Sitemap -->
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5 class="footer-title">Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#merchandise">Merchandise</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5 class="footer-title">Company</h5>
+          <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#feedback">Reviews</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#sitemap">Sitemap</a></li>
+          </ul>
+        </div>
+        <!-- Newsletter -->
+        <div class="col-lg-4 col-md-6">
+          <h5 class="footer-title">Newsletter</h5>
+          <p class="footer-desc">Subscribe for exclusive offers, new arrivals, and fresh bakery updates!</p>
+          <div class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Enter your email..." />
+            <button class="newsletter-btn" type="button"><i class="fas fa-arrow-right"></i></button>
+          </div>
+          <p class="footer-desc mt-3" style="font-size:0.78rem; opacity:0.5">
+            <i class="fas fa-lock me-1"></i>We respect your privacy. Unsubscribe anytime.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p>&copy; 2026 Bakerz Bite. All Rights Reserved. | Crafted with <i class="fas fa-heart" style="color:var(--gold)"></i></p>
+        </div>
+        <div class="col-md-6 text-md-end footer-bottom-links">
+          <a href="#sitemap">Sitemap</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ========================================================
+     BOTTOM TICKER
+     ======================================================== -->
+<div class="bottom-ticker" id="bottomTicker">
+  <div class="ticker-track" id="tickerTrack">
+    <!-- Injected by JS -->
+  </div>
+</div>
+
+<!-- ========================================================
+     PRODUCT DETAIL MODAL
+     ======================================================== -->
+<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content custom-modal">
+      <div class="modal-header custom-modal-header">
+        <h5 class="modal-title" id="modalProductName">Product Name</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body custom-modal-body">
+        <div class="row g-4">
+          <div class="col-md-5">
+            <div class="modal-product-img" id="modalProductImg"></div>
+          </div>
+          <div class="col-md-7">
+            <span class="modal-cat-badge" id="modalProductCat"></span>
+            <p class="modal-desc" id="modalProductDesc"></p>
+            <div class="modal-info-row">
+              <h6><i class="fas fa-list-ul me-2"></i>Ingredients</h6>
+              <p id="modalProductIngredients"></p>
+            </div>
+            <div class="modal-info-row">
+              <h6><i class="fas fa-tag me-2"></i>Price</h6>
+              <p class="modal-price" id="modalProductPrice"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer custom-modal-footer">
+        <button type="button" class="btn btn-secondary-outline" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn-whatsapp-order" onclick="orderOnWhatsApp()">
+          <i class="fab fa-whatsapp me-1"></i> Order via WhatsApp
+        </button>
+        <button type="button" class="btn btn-primary-custom" onclick="addToWishlist()">
+          <i class="fas fa-heart me-1"></i> Add to Wishlist
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========================================================
+     GALLERY LIGHTBOX MODAL
+     ======================================================== -->
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content gallery-modal">
+      <button type="button" class="btn-close gallery-modal-close btn-close-white" data-bs-dismiss="modal"></button>
+      <div class="gallery-modal-body">
+        <img id="galleryModalImage" class="gallery-modal-img" src="" alt="" />
+        <div class="gallery-modal-emoji" id="galleryModalEmoji"></div>
+        <p class="gallery-modal-caption" id="galleryModalCaption"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========================================================
+     TOAST NOTIFICATION
+     ======================================================== -->
+<div class="toast-container position-fixed end-0 p-3" style="z-index:11000; bottom: 55px;">
+  <div id="mainToast" class="toast custom-toast align-items-center" role="alert">
+    <div class="d-flex">
+      <div class="toast-body" id="toastBody">
+        <i class="fas fa-check-circle me-2"></i> Done!
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+    </div>
+  </div>
+</div>
+
+<!-- WhatsApp FAB -->
+<a href="https://wa.me/2348012345678?text=Hello%20Bakerz%20Bite!%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener" class="whatsapp-fab" id="whatsappFab" aria-label="Order via WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Back to Top -->
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- ========================================================
+     SCRIPTS
+     ======================================================== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

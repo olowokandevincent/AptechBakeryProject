@@ -1,0 +1,296 @@
+{
+  "cakes": [
+    {
+      "id": "c001",
+      "name": "Classic Chocolate Fudge Cake",
+      "price": 34.99,
+      "category": "cakes",
+      "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400",
+      "description": "A decadent triple-layer chocolate fudge cake made with the finest Belgian chocolate, layered with rich ganache and finished with a silky chocolate buttercream frosting.",
+      "ingredients": "Unbleached flour, Belgian dark chocolate (72%), real butter, free-range eggs, caster sugar, full-fat cream, baking powder, pure vanilla extract, sea salt.",
+      "tag": "bestseller"
+    },
+    {
+      "id": "c002",
+      "name": "Red Velvet Dream",
+      "price": 38.99,
+      "category": "cakes",
+      "image": "https://images.unsplash.com/photo-1616541823729-00fe0aacd32c?w=400",
+      "description": "Our signature Red Velvet Cake features moist crimson layers with a subtle cocoa flavour, frosted generously with our house cream cheese buttercream.",
+      "ingredients": "Unbleached flour, natural red food colouring, cocoa powder, real butter, cream cheese, buttermilk, free-range eggs, white vinegar, baking soda, vanilla extract.",
+      "tag": "popular"
+    },
+    {
+      "id": "c003",
+      "name": "Lemon Drizzle Delight",
+      "price": 29.99,
+      "category": "cakes",
+      "image": "https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?w=400",
+      "description": "A bright and zesty lemon sponge soaked in warm lemon syrup and topped with a sharp lemon glaze. A timeless classic with a refreshing twist.",
+      "ingredients": "Unbleached flour, real butter, caster sugar, free-range eggs, fresh lemons (zest & juice), baking powder, full-fat milk, icing sugar.",
+      "tag": "new"
+    },
+    {
+      "id": "c004",
+      "name": "Strawberry Garden Cake",
+      "price": 42.99,
+      "category": "cakes",
+      "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400",
+      "description": "Layers of light vanilla sponge, fresh whipped cream, and ripe seasonal strawberries. Decorated with whole strawberries and mint for an elegant finish.",
+      "ingredients": "Unbleached flour, fresh strawberries, real cream, real butter, free-range eggs, caster sugar, pure vanilla extract, baking powder.",
+      "tag": "seasonal"
+    },
+    {
+      "id": "c005",
+      "name": "Caramel Pecan Torte",
+      "price": 44.99,
+      "category": "cakes",
+      "image": "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=400",
+      "description": "A luxurious multi-layered torte filled with house-made salted caramel, roasted pecans, and velvety caramel buttercream. Perfect for special occasions.",
+      "ingredients": "Unbleached flour, real butter, pecans, brown sugar, heavy cream, sea salt, free-range eggs, vanilla extract, baking powder.",
+      "tag": "premium"
+    }
+  ],
+  "pastries": [
+    {
+      "id": "p001",
+      "name": "Butter Croissant",
+      "price": 3.49,
+      "category": "pastries",
+      "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400",
+      "description": "Hand-laminated with 27 layers of pure butter dough, our croissants are baked fresh every morning to achieve that perfect golden crunch with a pillowy interior.",
+      "ingredients": "Unbleached flour, real butter (27 layers), whole milk, fresh yeast, sea salt, caster sugar, free-range egg (egg wash).",
+      "tag": "bestseller"
+    },
+    {
+      "id": "p002",
+      "name": "Almond Pain au Chocolat",
+      "price": 4.29,
+      "category": "pastries",
+      "image": "https://images.unsplash.com/photo-1602351447937-745cb720612f?w=400",
+      "description": "A luxurious twist on the classic. Our buttery croissant dough wrapped around two batons of Belgian dark chocolate, filled with almond frangipane and topped with toasted almonds.",
+      "ingredients": "Unbleached flour, real butter, Belgian dark chocolate, ground almonds, almond extract, free-range eggs, powdered sugar, whole milk, sea salt.",
+      "tag": "popular"
+    },
+    {
+      "id": "p003",
+      "name": "Danish Berry Swirl",
+      "price": 3.99,
+      "category": "pastries",
+      "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=400",
+      "description": "Flaky Danish pastry layered with vanilla custard and topped with a swirl of fresh mixed berries and a light apricot glaze.",
+      "ingredients": "Unbleached flour, real butter, fresh cream, free-range eggs, mixed berries (strawberry, blueberry, raspberry), pure vanilla, apricot preserve, caster sugar.",
+      "tag": "new"
+    },
+    {
+      "id": "p004",
+      "name": "Cinnamon Roll",
+      "price": 3.79,
+      "category": "pastries",
+      "image": "https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=400",
+      "description": "Soft, pillowy dough swirled with cinnamon-butter filling, baked until golden and drizzled with tangy cream cheese glaze while still warm.",
+      "ingredients": "Unbleached flour, real butter, whole milk, fresh yeast, cinnamon, brown sugar, cream cheese, vanilla extract, free-range eggs, sea salt.",
+      "tag": "bestseller"
+    },
+    {
+      "id": "p005",
+      "name": "Eclair au Cafe",
+      "price": 4.99,
+      "category": "pastries",
+      "image": "https://images.unsplash.com/photo-1586985288123-2495f577dd09?w=400",
+      "description": "Classic choux pastry filled with silky coffee diplomat cream and dipped in a glossy coffee fondant glaze. A Parisian favourite, freshly made daily.",
+      "ingredients": "Unbleached flour, real butter, free-range eggs, whole milk, heavy cream, espresso, white chocolate, coffee extract, powdered sugar.",
+      "tag": "premium"
+    }
+  ],
+  "cookies": [
+    {
+      "id": "k001",
+      "name": "Chunky Chocolate Chip Cookie",
+      "price": 2.49,
+      "category": "cookies",
+      "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400",
+      "description": "Thick, chewy-centred cookies loaded with Belgian dark and milk chocolate chunks. Lightly sea-salted on top for that perfect sweet-salty balance.",
+      "ingredients": "Unbleached flour, real butter, Belgian dark chocolate chunks, milk chocolate chunks, brown sugar, free-range eggs, pure vanilla extract, sea salt, baking soda.",
+      "tag": "bestseller"
+    },
+    {
+      "id": "k002",
+      "name": "Snickerdoodle",
+      "price": 2.19,
+      "category": "cookies",
+      "image": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400",
+      "description": "Soft, pillowy cookies rolled in cinnamon-sugar with a distinctive tangy note from cream of tartar. An American classic done the Bakerz Bite way.",
+      "ingredients": "Unbleached flour, real butter, caster sugar, free-range eggs, cream of tartar, baking soda, cinnamon, sea salt.",
+      "tag": "popular"
+    },
+    {
+      "id": "k003",
+      "name": "Pistachio & Rose Cookie",
+      "price": 2.99,
+      "category": "cookies",
+      "image": "https://images.unsplash.com/photo-1591736789847-6e43e5ac9f78?w=400",
+      "description": "Delicate shortbread-style cookies infused with rose water and studded with crushed pistachios, finished with a light dusting of edible rose petals.",
+      "ingredients": "Unbleached flour, real butter, pistachios, rose water, caster sugar, free-range egg yolk, powdered sugar, edible rose petals.",
+      "tag": "premium"
+    },
+    {
+      "id": "k004",
+      "name": "Classic Shortbread",
+      "price": 1.99,
+      "category": "cookies",
+      "image": "https://images.unsplash.com/photo-1548365328-8c6db3220e4c?w=400",
+      "description": "Three ingredients. Infinite pleasure. Real butter, unbleached flour, and fine sugar — baked slowly for a melt-in-your-mouth crumble. No shortcuts.",
+      "ingredients": "Unbleached flour, real butter, caster sugar.",
+      "tag": "classic"
+    }
+  ],
+  "pies": [
+    {
+      "id": "pi001",
+      "name": "Apple & Cinnamon Pie",
+      "price": 24.99,
+      "category": "pies",
+      "image": "https://images.unsplash.com/photo-1621743478914-cc8a86d7e7b5?w=400",
+      "description": "Golden, flaky all-butter pastry encasing a generous filling of slow-cooked Bramley apples spiced with cinnamon, nutmeg, and a touch of lemon zest.",
+      "ingredients": "Unbleached flour, real butter, Bramley apples, brown sugar, cinnamon, nutmeg, lemon zest, free-range egg (wash), sea salt.",
+      "tag": "bestseller"
+    },
+    {
+      "id": "pi002",
+      "name": "Salted Caramel Pecan Pie",
+      "price": 27.99,
+      "category": "pies",
+      "image": "https://images.unsplash.com/photo-1562059390-a761a084768e?w=400",
+      "description": "A Southern-inspired classic elevated with house-made salted caramel, whole roasted pecans, and a hint of bourbon in a buttery shortcrust pastry shell.",
+      "ingredients": "Unbleached flour, real butter, pecans, brown sugar, heavy cream, sea salt, bourbon, free-range eggs, vanilla extract.",
+      "tag": "premium"
+    },
+    {
+      "id": "pi003",
+      "name": "Classic Lemon Meringue",
+      "price": 22.99,
+      "category": "pies",
+      "image": "https://images.unsplash.com/photo-1473819356888-52b5f8a5b09c?w=400",
+      "description": "Sharp, tangy lemon curd in a crisp pastry shell, crowned with mountains of toasted Italian meringue. Baked fresh daily.",
+      "ingredients": "Unbleached flour, real butter, fresh lemons, free-range eggs, caster sugar, cornflour, sea salt.",
+      "tag": "popular"
+    }
+  ],
+  "merchandise": [
+    {
+      "id": "m001",
+      "name": "Bakerz Bite Signature Mug",
+      "price": 14.99,
+      "category": "merchandise",
+      "image": "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=400",
+      "description": "Start your morning right. Our 350ml ceramic mug features the Bakerz Bite logo in embossed gold. Dishwasher safe. Available in cream and charcoal.",
+      "ingredients": "Premium ceramic, food-grade glaze, gold embossed logo.",
+      "tag": "popular"
+    },
+    {
+      "id": "m002",
+      "name": "Canvas Tote Bag",
+      "price": 12.99,
+      "category": "merchandise",
+      "image": "https://images.unsplash.com/photo-1607082349566-187342175e2f?w=400",
+      "description": "Our sturdy 100% organic cotton canvas tote is printed with the Bakerz Bite motto. Perfect for your bakery haul.",
+      "ingredients": "100% organic cotton canvas, water-based eco-friendly print.",
+      "tag": "new"
+    },
+    {
+      "id": "m003",
+      "name": "Glass Tumbler Set (2-pack)",
+      "price": 19.99,
+      "category": "merchandise",
+      "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400",
+      "description": "Set of two 400ml borosilicate glass tumblers etched with the Bakerz Bite logo. Thermal resistant, perfect for hot or cold beverages.",
+      "ingredients": "Borosilicate glass, laser-etched Bakerz Bite branding.",
+      "tag": "premium"
+    },
+    {
+      "id": "m004",
+      "name": "Branded Serving Tray",
+      "price": 24.99,
+      "category": "merchandise",
+      "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400",
+      "description": "A beautiful bamboo serving tray with engraved Bakerz Bite branding. Ideal for entertaining. Dimensions: 40cm x 28cm with handles.",
+      "ingredients": "Sustainable bamboo, food-safe lacquer finish, laser-engraved branding.",
+      "tag": "bestseller"
+    }
+  ],
+  "offers": [
+    {
+      "id": "o001",
+      "title": "Morning Rush Deal",
+      "discount": "20% OFF",
+      "description": "Get 20% off on all pastries and beverages ordered before 10:00 AM. Fresh from the oven, delivered to your table.",
+      "validity": "Mon – Fri",
+      "code": "MORNING20"
+    },
+    {
+      "id": "o002",
+      "title": "Buy 6 Cookies, Get 2 Free",
+      "discount": "2 FREE",
+      "description": "Mix and match any 6 cookies from our cookie selection and we'll add 2 of your choice absolutely free. A sweet deal every day.",
+      "validity": "All Week",
+      "code": "COOKIE8"
+    },
+    {
+      "id": "o003",
+      "title": "Weekend Cake Special",
+      "discount": "15% OFF",
+      "description": "Enjoy 15% off on all whole cakes ordered for weekend collection. Perfect for birthdays, anniversaries, or just because.",
+      "validity": "Sat – Sun",
+      "code": "WKNDCAKE"
+    },
+    {
+      "id": "o004",
+      "title": "Loyalty Card — 10th Item Free",
+      "discount": "FREE ITEM",
+      "description": "Collect a stamp for every purchase. On your 10th item, treat yourself to any item up to $5.00 completely on us. Ask staff for your loyalty card.",
+      "validity": "Always",
+      "code": "LOYALTY"
+    }
+  ],
+  "gallery": [
+    "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600",
+    "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600",
+    "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=600",
+    "https://images.unsplash.com/photo-1621743478914-cc8a86d7e7b5?w=600",
+    "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600",
+    "https://images.unsplash.com/photo-1602351447937-745cb720612f?w=600",
+    "https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=600",
+    "https://images.unsplash.com/photo-1586985288123-2495f577dd09?w=600",
+    "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600",
+    "https://images.unsplash.com/photo-1562059390-a761a084768e?w=600",
+    "https://images.unsplash.com/photo-1616541823729-00fe0aacd32c?w=600",
+    "https://images.unsplash.com/photo-1473819356888-52b5f8a5b09c?w=600"
+  ],
+  "faqs": [
+    {
+      "q": "Do you offer custom cakes for special occasions?",
+      "a": "Absolutely! We love creating bespoke cakes for weddings, birthdays, anniversaries, and corporate events. Please contact us at least 5 days in advance with your requirements and we'll make something truly special."
+    },
+    {
+      "q": "Are your products made fresh daily?",
+      "a": "Yes! Every product at Bakerz Bite is made fresh in-store every single day. We never use frozen dough or pre-made mixes. Our bakers start at 4:00 AM to ensure everything is ready by opening time."
+    },
+    {
+      "q": "Do you cater for dietary requirements (gluten-free, vegan, nut-free)?",
+      "a": "We offer a growing range of gluten-free and vegan options. Our kitchen does handle nuts, so we cannot guarantee a completely nut-free environment. Please speak to our staff about specific allergen needs."
+    },
+    {
+      "q": "Can I place a bulk or corporate order?",
+      "a": "Yes! We offer attractive discounts for bulk orders of 20+ items. Email us at orders@bakerzbite.com or call us for a quote. We supply offices, events, and catering companies regularly."
+    },
+    {
+      "q": "What are your opening hours?",
+      "a": "We are open Monday to Friday: 7:00 AM – 7:00 PM, Saturday: 8:00 AM – 8:00 PM, Sunday: 9:00 AM – 5:00 PM."
+    },
+    {
+      "q": "Do you offer delivery?",
+      "a": "Yes, we offer local delivery within a 5-mile radius. Orders must be placed by 12:00 PM for same-day delivery. A delivery fee applies. You can also order through our website for collection."
+    }
+  ]
+}
