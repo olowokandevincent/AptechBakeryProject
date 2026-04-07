@@ -341,7 +341,7 @@ function openProductModal(id) {
     imgEl.innerHTML = '';
   }
 
-  new bootstrap.Modal(document.getElementById('productModal')).show();
+  bootstrap.Modal.getOrCreateInstance(document.getElementById('productModal')).show();
 }
 
 function orderOnWhatsApp() {
