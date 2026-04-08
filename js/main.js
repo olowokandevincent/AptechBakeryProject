@@ -11,10 +11,12 @@ let currentProductId = null;
 /* Loaded JSON data */
 let allData = {};
 
-/* Current filter / search / sort state */
-let activeFilter = 'all';
-let activeSearch = '';
-let activeSort   = '';
+/* Current filter / search / sort / price state */
+let activeFilter   = 'all';
+let activeSearch   = '';
+let activeSort     = '';
+let activePriceMin = 0;
+let activePriceMax = 50;
 
 /* Preloader: hide on full page load */
 window.addEventListener('load', () => {
@@ -118,6 +120,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   initFilters();
   initSearch();
   initSort();
+  initPriceRange();
   initStarRating();
   initForms();
   initTicker();
@@ -182,7 +185,8 @@ function initVisitorCounter() {
     localStorage.setItem('bb_visit_count', count);
     sessionStorage.setItem('bb_session', '1');
   }
-  countUp(document.getElementById('visitorCount'), count, 1600);
+  const vcEl = document.getElementById('visitorCount');
+  if (vcEl) countUp(vcEl, count, 1600);
 }
 
 function countUp(el, target, duration) {
@@ -255,7 +259,10 @@ function applyFiltersAndSearch() {
     );
   }
 
-  /* 3. Sort */
+  /* 3. Price range */
+  list = list.filter(p => p.price >= activePriceMin && p.price <= activePriceMax);
+
+  /* 4. Sort */
   if (activeSort === 'name-asc')   list.sort((a, b) => a.name.localeCompare(b.name));
   if (activeSort === 'name-desc')  list.sort((a, b) => b.name.localeCompare(a.name));
   if (activeSort === 'price-asc')  list.sort((a, b) => a.price - b.price);
@@ -309,6 +316,51 @@ function initSort() {
 }
 
 /* ----------------------------------------------------------------
+   PRICE RANGE DUAL SLIDER
+   ---------------------------------------------------------------- */
+function initPriceRange() {
+  const minInput  = document.getElementById('priceMin');
+  const maxInput  = document.getElementById('priceMax');
+  const display   = document.getElementById('priceDisplay');
+  const fillBar   = document.getElementById('rangeFillBar');
+  if (!minInput || !maxInput) return;
+
+  const RANGE_MAX = 50;
+
+  function updateSlider() {
+    let minVal = parseInt(minInput.value);
+    let maxVal = parseInt(maxInput.value);
+
+    /* Prevent handles crossing */
+    if (minVal >= maxVal) {
+      if (this === minInput) { minVal = maxVal - 1; minInput.value = minVal; }
+      else                   { maxVal = minVal + 1; maxInput.value = maxVal; }
+    }
+
+    /* Update fill bar position */
+    const leftPct  = (minVal / RANGE_MAX) * 100;
+    const rightPct = (maxVal / RANGE_MAX) * 100;
+    fillBar.style.left  = leftPct  + '%';
+    fillBar.style.width = (rightPct - leftPct) + '%';
+
+    /* Update label */
+    display.textContent = `$${minVal} – $${maxVal}`;
+
+    /* Update state and re-render */
+    activePriceMin = minVal;
+    activePriceMax = maxVal;
+    applyFiltersAndSearch();
+  }
+
+  minInput.addEventListener('input', updateSlider);
+  maxInput.addEventListener('input', updateSlider);
+
+  /* Init fill position */
+  fillBar.style.left  = '0%';
+  fillBar.style.width = '100%';
+}
+
+/* ----------------------------------------------------------------
    PRODUCT MODAL
    ---------------------------------------------------------------- */
 function openProductModal(id) {
@@ -346,11 +398,6 @@ function orderOnWhatsApp() {
   const priceStr = typeof p.price === 'number' ? `$${p.price.toFixed(2)}` : p.price;
   const msg = encodeURIComponent(`Hello Bakerz Bite! I'd like to order: *${p.name}* (${priceStr}). Please confirm availability.`);
   window.open(`https://wa.me/2348012345678?text=${msg}`, '_blank', 'noopener');
-  bootstrap.Modal.getInstance(document.getElementById('productModal')).hide();
-}
-
-function addToWishlist() {
-  showToast('Added to your wishlist! ❤️');
   bootstrap.Modal.getInstance(document.getElementById('productModal')).hide();
 }
 
@@ -413,7 +460,7 @@ function openGalleryModal(item) {
     imgEl.style.display   = 'none';
   }
 
-  new bootstrap.Modal(document.getElementById('galleryModal')).show();
+  bootstrap.Modal.getOrCreateInstance(document.getElementById('galleryModal')).show();
 }
 
 /* ----------------------------------------------------------------
@@ -500,7 +547,7 @@ function initForms() {
 
   document.getElementById('contactForm').addEventListener('submit', e => {
     e.preventDefault();
-    showToast('Message sent! We\'ll get back to you shortly. 😊');
+    showToast('Message sent! We\'ll get back to you shortly.');
     e.target.reset();
   });
 }
@@ -572,7 +619,7 @@ function buildTicker() {
     `<i class="fas fa-map-marker-alt"></i>&nbsp;<span class="ticker-location">${userCity}</span>`,
     `<i class="fas fa-tag"></i>&nbsp;Today's Deal: 20% OFF Red Velvet Cake!`,
     `<i class="fas fa-star"></i>&nbsp;Rated 4.9 / 5 by over 1,247 happy customers`,
-    `<i class="fas fa-truck"></i>&nbsp;Free delivery on orders above ₦10,000`,
+    `<i class="fas fa-truck"></i>&nbsp;Free delivery on orders above $15.00`,
     `<i class="fas fa-bread-slice"></i>&nbsp;300+ fresh baked goods available in-store NOW`,
     `<i class="fas fa-phone"></i>&nbsp;Order: +234 801 234 5678`,
     `<i class="fas fa-envelope"></i>&nbsp;hello@bakerzbite.com`,
