@@ -1,14 +1,25 @@
 # Bakerz Bite
 
-A responsive single-page bakery website built with HTML5, CSS3, and vanilla JavaScript.
+A responsive single-page bakery website built with HTML5, CSS3, and JavaScript.
 
 ![Desktop Preview](screenshoots/desktop.png)
 
 ---
 
-## Live Preview
+## Live Demo
 
-Open `index.html` directly in any modern browser - no build step or server required.
+[https://bakery-gamma-plum.vercel.app/](https://bakery-gamma-plum.vercel.app/)
+
+## Repository
+
+[https://github.com/codewithmuideen/bakery](https://github.com/codewithmuideen/bakery)
+
+---
+
+## Local Preview
+
+Open `index.html` with VS Code Live Server or any local HTTP server.  
+> Note: Do **not** open via `file://` — the Fetch API will be blocked by CORS.
 
 ---
 
@@ -43,7 +54,7 @@ Bakerz_Bite_Project/
 |---|---|
 | HTML5 | Semantic markup, SPA structure |
 | CSS3 | Custom design system, animations |
-| Vanilla JavaScript | All interactivity, no frameworks |
+| JavaScript | All interactivity, no frameworks |
 | Bootstrap 5.3.2 | Grid, components, utilities |
 | Font Awesome 6.5 | Icons |
 | AOS (Animate On Scroll) | Scroll-triggered animations |
