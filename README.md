@@ -2,7 +2,7 @@
 
 A responsive single-page bakery website built with HTML5, CSS3, and JavaScript.
 
-![Desktop Preview](screenshoots/desktop.png)
+![Desktop Preview](screenshoots/desktop-preview.jpg)
 
 ---
 
@@ -102,7 +102,7 @@ Bakerz_Bite_Project/
 
 ## Mobile Preview
 
-![Mobile Preview](screenshoots/mobile.png)
+![Mobile Preview](screenshoots/mobile-preview.jpg)
 
 ---
 
