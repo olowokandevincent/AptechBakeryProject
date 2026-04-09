@@ -583,7 +583,7 @@ function showToast(message) {
 /* ----------------------------------------------------------------
    BOTTOM TICKER — real-time clock + geolocation
    ---------------------------------------------------------------- */
-let userCity = 'Lagos, Nigeria';
+let userCity = 'Dada Estate, Osogbo';
 
 function initTicker() {
   buildTicker();
@@ -623,7 +623,7 @@ function buildTicker() {
     `<i class="fas fa-bread-slice"></i>&nbsp;300+ fresh baked goods available in-store NOW`,
     `<i class="fas fa-phone"></i>&nbsp;Order: +234 801 234 5678`,
     `<i class="fas fa-envelope"></i>&nbsp;hello@bakerzbite.com`,
-    `<i class="fas fa-crown"></i>&nbsp;Join our loyalty programme — earn points on every purchase!`
+    `<i class="fas fa-crown"></i>&nbsp;Join our loyalty programme - earn points on every purchase!`
   ];
 
   const sep = '<span class="ticker-sep">✦</span>';

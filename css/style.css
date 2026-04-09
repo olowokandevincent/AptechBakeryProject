@@ -1786,17 +1786,15 @@ a { text-decoration: none; }
     overflow-x: auto;
     overflow-y: visible;
     -webkit-overflow-scrolling: touch;
-    padding-bottom: 4px;
-    scrollbar-width: thin;
-    scrollbar-color: var(--gold) transparent;
+    padding-bottom: 0;
+    scrollbar-width: none;
     width: 100%;
     max-width: 100%;
   }
-  .filter-pills::-webkit-scrollbar        { height: 3px; }
-  .filter-pills::-webkit-scrollbar-thumb  { background: var(--gold); border-radius: 2px; }
+  .filter-pills::-webkit-scrollbar        { display: none; }
   .filter-btn        { flex-shrink: 0; padding: 8px 16px; font-size: 0.82rem; }
   .sort-select       { width: 100%; }
-  .price-range-wrap  { max-width: 100%; min-width: unset; }
+  .price-range-wrap  { display: block; width: 100%; max-width: 100%; min-width: unset; opacity: 1; transform: none; }
 
   /* Cards */
   .card-top-img { height: 180px; }

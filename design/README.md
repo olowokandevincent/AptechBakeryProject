@@ -3,9 +3,11 @@
 Place Figma design screenshots and mockups in this folder.
 
 Recommended files to add:
-- `figma-homepage.png` — Full homepage design mockup
-- `figma-mobile.png` — Mobile layout mockup
-- `figma-components.png` — Component/UI kit screenshot
-- `figma-wireframe.png` — Low-fidelity wireframe (if available)
+- `figma-design-Bakerz-Bite.png` — design mockup
+- `desktopView.png` — Desktop layout mockup
+- `mobileView.png` — Mobile layout mockup
+- `tabletView.png` — Tablet layout mockup
+
+https://www.figma.com/design/X54469gTfThS0FcyUs1yma/Bakerz-Bite?node-id=1-2&t=XmP1Z0B9xHsRbuwO-0 
 
 Export from Figma: File > Export Frames > PNG
