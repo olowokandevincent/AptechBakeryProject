@@ -183,7 +183,7 @@
       "name": "Bakerz Bite Signature Mug",
       "price": 14.99,
       "category": "merchandise",
-      "image": "../assets/images/mug.jpg",
+      "image": "../assets/images/mug.png",
       "description": "Start your morning right. Our 350ml ceramic mug features the Bakerz Bite logo in embossed gold. Dishwasher safe. Available in cream and charcoal.",
       "ingredients": "Premium ceramic, food-grade glaze, gold embossed logo.",
       "tag": "popular"
@@ -193,7 +193,7 @@
       "name": "Canvas Tote Bag",
       "price": 12.99,
       "category": "merchandise",
-      "image": "../assets/images/bag.jpg",
+      "image": "../assets/images/bag.png",
       "description": "Our sturdy 100% organic cotton canvas tote is printed with the Bakerz Bite motto. Perfect for your bakery haul.",
       "ingredients": "100% organic cotton canvas, water-based eco-friendly print.",
       "tag": "new"

@@ -8,11 +8,11 @@ A responsive single-page bakery website built with HTML5, CSS3, and JavaScript.
 
 ## Live Demo
 
-[https://bakery-gamma-plum.vercel.app/](https://bakery-gamma-plum.vercel.app/)
+[https://aptech-bakery-project.vercel.app/](https://aptech-bakery-project.vercel.app/)
 
 ## Repository
 
-[https://github.com/codewithmuideen/bakery](https://github.com/codewithmuideen/bakery)
+[https://github.com/olowokandevincent/AptechBakeryProject](https://github.com/olowokandevincent/AptechBakeryProject)
 
 ---
 
