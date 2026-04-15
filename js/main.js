@@ -397,7 +397,7 @@ function orderOnWhatsApp() {
   if (!p) return;
   const priceStr = typeof p.price === 'number' ? `$${p.price.toFixed(2)}` : p.price;
   const msg = encodeURIComponent(`Hello Bakerz Bite! I'd like to order: *${p.name}* (${priceStr}). Please confirm availability.`);
-  window.open(`https://wa.me/2348012345678?text=${msg}`, '_blank', 'noopener');
+  window.open(`https://wa.me/2348050511828?text=${msg}`, '_blank', 'noopener');
   bootstrap.Modal.getInstance(document.getElementById('productModal')).hide();
 }
 
