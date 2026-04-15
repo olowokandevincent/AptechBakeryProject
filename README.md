@@ -37,8 +37,14 @@ Bakerz_Bite_Project/
 ├── assets/
 │   └── images/             # Logo, hero slides, gallery, about, merch images
 ├── design/                 # Figma design screenshots & mockups
+│   ├── desktopView.png
+│   ├── mobileView.png
+│   ├── tabletView.png
+│   └── screencapture-figma-design-Bakerz-Bite.png
 ├── screenshoots/           # Browser screenshots (desktop + mobile)
+│   ├── desktop-preview.jpg
 │   ├── desktop.png
+│   ├── mobile-preview.jpg
 │   └── mobile.png
 ├── Report/
 │   └── Project_Report.docx # Academic project report
@@ -114,7 +120,7 @@ Design mockups and wireframes are located in the [`design/`](design/) folder.
 
 ## Academic Context
 
-This project was submitted as an academic Single-Page Application (SPA) project demonstrating proficiency in HTML5, CSS3, and JavaScript without relying on front-end frameworks.
+This project is the **Semester 1 e-project** submitted to **Aptech Computer Education HQ**, demonstrating proficiency in HTML5, CSS3, and JavaScript to build a fully functional Single-Page Application (SPA) without relying on front-end frameworks.
 
 Report: [`Report/Project_Report.docx`](Report/Project_Report.docx)
 
